@@ -2,6 +2,12 @@
     <string name="app_name">AndroidMirea4</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pepperoni">Pepe pizza</string>
-    <string name="price">From 300$</string>
+    <string name="pizza_price">From 300$</string>
     <string name="pizza_description">Pizza with pepperoni, cheese and tomato sauce</string>
+    <string name="latte">Lat(t)e</string>
+    <string name="latte_description">Latte with milk and caramel</string>
+    <string name="latte_price">From 5$</string>
+    <string name="sushi">Phila sushi</string>
+    <string name="sushi_description">Philadelphia sushi with salmon</string>
+    <string name="sushi_price">From 20$</string>
 </resources>
