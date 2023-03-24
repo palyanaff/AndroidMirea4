@@ -31,7 +31,7 @@ public class ListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
-        listView = (ListView) view.findViewById(R.id.list_view);
+        listView = view.findViewById(R.id.list_view);
         ArrayList<OrderItem> list = new ArrayList<>();
         for (int i = 0; i < 67; i++){
             list.add(new OrderItem(R.drawable.coffee_latte, getString(R.string.latte),
@@ -47,9 +47,9 @@ public class ListFragment extends Fragment {
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View itemClicked, int i, long l) {
-                Log.i(TAG, "Item clicked");
-                Toast.makeText(view.getContext(), "Click", Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Log.i(TAG, "Item: " + position);
+                Toast.makeText(getContext(), "Click", Toast.LENGTH_SHORT).show();
             }
         });
         return view;

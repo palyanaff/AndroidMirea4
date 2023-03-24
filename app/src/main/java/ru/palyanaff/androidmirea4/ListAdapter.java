@@ -27,12 +27,12 @@ public class ListAdapter extends ArrayAdapter<OrderItem> {
         ImageView imageView = view.findViewById(R.id.item_image);
         TextView header = view.findViewById(R.id.item_name);
         TextView description = view.findViewById(R.id.item_description);
-        Button button = view.findViewById(R.id.item_button);
+        //Button button = view.findViewById(R.id.item_button);
 
         imageView.setImageResource(getItem(position).getImage());
         header.setText(getItem(position).getHeader());
         description.setText(getItem(position).getDescription());
-        button.setText(getItem(position).getCost());
+        //button.setText(getItem(position).getCost());
 
         return view;
     }
